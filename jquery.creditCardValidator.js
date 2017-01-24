@@ -159,14 +159,24 @@
         name: 'dankort',
         range: '5019',
         valid_length: [16]
-      }, {
-        name: 'maestro',
-        range: '50, 56-69',
-        valid_length: [12, 13, 14, 15, 16, 17, 18, 19]
-      }, {
+      },
+       // {
+     //   name: 'maestro',
+      //  range: '50, 56-69',
+      //  valid_length: [12, 13, 14, 15, 16, 17, 18, 19]
+      // },
+       {
         name: 'uatp',
         range: '1',
         valid_length: [15]
+      }, {
+        name: 'elo',
+        range: "636368, 438935, 504175, 451416, 636297, 5067, 4576, 4011, 50904, 50905, 50906",
+        valid_length: [16]
+      }, {
+        name: 'hiperCard',
+        range: '38,60',
+        valid_length: [11, 17]
       }
     ];
     bind = false;
