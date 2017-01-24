@@ -120,6 +120,30 @@
     var bind, card, card_type, card_types, get_card_type, is_valid_length, is_valid_luhn, j, len, normalize, ref, validate, validate_number;
     card_types = [
       {
+        name: 'amex',
+        range: '34,37',
+        valid_length: [15]
+      }, {
+        name: 'diners_club_carte_blanche',
+        range: '300-305',
+        valid_length: [14]
+      }, {
+        name: 'diners_club_international',
+        range: '36',
+        valid_length: [14]
+      }, {
+        name: 'jcb',
+        range: '3528-3589',
+        valid_length: [16]
+      }, {
+        name: 'laser',
+        range: '6304, 6706, 6709, 6771',
+        valid_length: [16, 17, 18, 19]
+      }, {
+        name: 'visa_electron',
+        range: '4026, 417500, 4508, 4844, 4913, 4917',
+        valid_length: [16]
+      }, {
         name: 'visa',
         range: '4',
         valid_length: [13, 14, 15, 16, 17, 18, 19]
@@ -128,21 +152,21 @@
         range: '51-55,2221-2720',
         valid_length: [16]
       }, {
-        name: 'amex',
-        range: '34,37',
-        valid_length: [15]
-      }, {
-        name: 'diners_club_carte_blanche',
-        range: '300-305, 36',
-        valid_length: [14]
-      }, {
-        name: 'elo',
-        range: "636368, 438935, 504175, 451416, 636297, 5067, 4576, 4011, 50904, 50905, 50906",
+        name: 'discover',
+        range: '6011, 622126-622925, 644-649, 65',
         valid_length: [16]
       }, {
-        name: 'hiperCard',
-        range: '38,60',
-        valid_length: [11, 17]
+        name: 'dankort',
+        range: '5019',
+        valid_length: [16]
+      }, {
+        name: 'maestro',
+        range: '50, 56-69',
+        valid_length: [12, 13, 14, 15, 16, 17, 18, 19]
+      }, {
+        name: 'uatp',
+        range: '1',
+        valid_length: [15]
       }
     ];
     bind = false;
